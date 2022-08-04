@@ -1,0 +1,9 @@
+.header {
+  padding: 0 ;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.flexContainer {
+  composes: spaceBetween from 'styles/util.module.css'
+}

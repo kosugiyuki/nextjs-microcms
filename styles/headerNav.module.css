@@ -1,0 +1,20 @@
+.headerNav {
+  padding: 8px 16px;
+}
+.headerNav ul {
+  display: flex;
+  gap: 2rem;
+}
+@media ( hover :hover) {
+  .headerNav ul li a:hover {
+    color: var(--accent);
+  }
+}
+@media ( hover :none) {
+  .headerNav ul li a {
+    -webkit-tap-highlight-color: transparent;
+  }
+  .headerNav ul li a:active {
+    color: var(--accent);
+  }
+}

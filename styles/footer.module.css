@@ -1,0 +1,18 @@
+.text {
+  padding: 20px;
+  border: 2px solid currentColor;
+  color: darkblue;
+}
+.title {
+  font-size: 80px;
+}
+.subtitle {
+  font-size: 20px;
+}
+.wrapper {
+  padding: var(--space-xl) 0;
+  background-color: var(--gray-10);
+}
+.flexContainer {
+  composes: sideBySideCenter from "styles/util.module.css"
+}

@@ -1,0 +1,19 @@
+/* .wrapper {
+  padding: var(--space-xl) 0;
+  background-color: var(--gray-10);
+}
+.flexContainer {
+  composes: sideBySideCenter from "styles/util.module.css"
+} */
+.text {
+  padding-top: calc(var(--display) * 0.5);
+  padding-bottom: calc(var(--display) * 0.7);
+}
+.title {
+  font-size: var(--display);
+  font-weight: 900;
+  letter-spacing: 0.15em;
+}
+.subtitle {
+  font-size: var(--small-heading2);
+}
