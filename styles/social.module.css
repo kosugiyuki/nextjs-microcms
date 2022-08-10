@@ -1,0 +1,18 @@
+.list {
+  /* composes: sideBySide from 'util.module.css'; */
+  display: flex;
+  gap: 2rem;
+  font-size: var(--icon-size, 24px);
+}
+.list li a {
+  transition: .2s;
+}
+.list li a:hover {
+  opacity: .7;
+}
+
+@media screen and (min-width:768px) {
+  .list {
+    /* gap: 3rem; */
+  }
+}
