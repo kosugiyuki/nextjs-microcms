@@ -10,6 +10,7 @@ import {
 } from 'components/two-column'
 import Image from 'next/image'
 import eyecatch from 'images/about.jpg'
+import Accordion from 'components/accordion'
 
 export default function Home() {
   return (
@@ -50,6 +51,22 @@ export default function Home() {
               <p>
                 今までと違うものを作ることで愛着が湧いてきます。そこで興味を持ったことは小さなことでもいいから取り入れて、良いものを作れるようにしています。小さなヒントから新しいものを生み出すようなモノづくりは、これからも続けていきたいです。
               </p>
+              <h2>FAQ</h2>
+              <Accordion heading="プラグラミングのポイントについて">
+                <p>
+                  プラグラミングのポイントについて。プラグラミングのポイントについて。プラグラミングのポイントについて。プラグラミングのポイントについて。
+                </p>
+              </Accordion>
+              <Accordion heading="プラグラミングのポイントについて">
+                <p>
+                  プラグラミングのポイントについて。プラグラミングのポイントについて。プラグラミングのポイントについて。プラグラミングのポイントについて。
+                </p>
+              </Accordion>
+              <Accordion heading="プラグラミングのポイントについて">
+                <p>
+                  プラグラミングのポイントについて。プラグラミングのポイントについて。プラグラミングのポイントについて。プラグラミングのポイントについて。
+                </p>
+              </Accordion>
             </PostBody>
           </TwoColumnMain>
           <TwoColumnSidebar>

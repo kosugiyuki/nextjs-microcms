@@ -4,7 +4,6 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faFolderOpen } from '@fortawesome/free-regular-svg-icons'
 
 export default function PostCategories({ categories }) {
-  const categoriesArray = [categories]
   return (
     <div className={styles.flexContainer}>
       <h3 className={styles.heading}>
@@ -12,7 +11,7 @@ export default function PostCategories({ categories }) {
         <span className="sr-only">Categories</span>
       </h3>
       <ul className={styles.list}>
-        {categoriesArray.map(({ name, slug }) => (
+        {categories.map(({ name, slug }) => (
           <li key={slug}>
             <Link href={`/blog/category/${slug}`}>
               <a>{name}</a>

@@ -1,6 +1,7 @@
 import Container from "@/components/container"
 import Logo from "./logo";
 import HeaderNav from "@/components/headerNav"
+import Nav from 'components/nav'
 import styles from "styles/header.module.css";
 
 export default function Header () {
@@ -9,7 +10,8 @@ export default function Header () {
       <Container>
         <div className={styles.flexContainer}>
           <Logo boxOn/>
-          <HeaderNav/>
+          {/* <HeaderNav/> */}
+          <Nav/>
         </div>
       </Container>
     </header>
