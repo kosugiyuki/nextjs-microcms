@@ -9,7 +9,7 @@ import { getPlaiceholder } from 'plaiceholder'
 import { eyecatchLocal } from 'lib/constants'
 
 export default function Category({ name, posts }) {
-  // console.log(posts);
+  console.log(posts);
   return (
     <Container>
       <Meta pageTitle={name} pageDesc={`${name}に関する記事`} />
@@ -29,11 +29,8 @@ export async function getStaticPaths() {
 
 export async function getStaticProps(context) {
   const catSlug = context.params.slug
-
   const allCats = await getAllCategories()
   const cat = allCats.find(({ slug }) => slug === catSlug)
-  console.log(cat)
-
   const posts = await getAllPostsByCategory(cat.id)
 
   for (const post of posts) {

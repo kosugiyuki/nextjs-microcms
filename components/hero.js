@@ -1,6 +1,6 @@
 import styles from "styles/hero.module.css";
 import Image from "next/image";
-import cube from "images/cube.jpg"
+import topKv from "images/topKv.png"
 
 export default function Hero ({title, subtitle, imageOn = false}) {
   return (
@@ -12,7 +12,7 @@ export default function Hero ({title, subtitle, imageOn = false}) {
         {imageOn && (
           <figure className={styles.image}>
             <Image
-              src={cube}
+              src={topKv}
               alt=""
               layout="responsive"
               priority
